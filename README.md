@@ -110,33 +110,33 @@ Il programma di base fornito `room_escape.py` contiene già le definizioni delle
 === Benvenuto in Room Escape ===
 
 Livello 0) Griglia 2x2
-P .
+G .
 . U
 Mossa (n/s/e/o): s
 . .
-P U
+G U
 Hai raggiunto l’uscita!
 
 Livello 1) Griglia 3x3
-P . .
+G . .
 . . .
 . . U
 Mossa (n/s/e/o): s
-. P .
+. G .
 . . .
 . . U
 Mossa (n/s/e/o): s
 . . .
-. P .
+. G .
 . . U
 Mossa (n/s/e/o): e
 . . .
-. . P
+. . G
 . . U
 Hai raggiunto l’uscita!
 
 Livello 2) Griglia 4x4
-P . . .
+G . . .
 . . . .
 . . . .
 . . . U
