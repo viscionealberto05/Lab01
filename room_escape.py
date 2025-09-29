@@ -18,7 +18,7 @@ def muovi(pos, mossa):
     # TODO
     if(mossa == 'n'):
         pos[0] = pos[0]-1
-    if(mossa == 'n'):
+    if(mossa == 's'):
         pos[0] = pos[0]+1
     if(mossa == 'e'):
         pos[1] = pos[1]+1
@@ -44,6 +44,10 @@ def gestisci_livello(livello):
     x = randint(0, n-1)
     y = randint(0, n-1)
 
+    while(x == n-1 and y == n-1): # Per evitare che venga estratta come posizone del giocatore l'uscita
+        x = randint(0, n - 1)
+        y = randint(0, n - 1)
+
     posizione = [x, y]
 
     print(f"Livello {livello} Griglia {n}x{n}")
@@ -64,12 +68,12 @@ def gestisci_livello(livello):
             uscita = False
             finito = True
 
-        if(uscita == True):
-            print("Hai raggiunto l'uscita!")
-            return True
-        else:
-            print("GAMEOVER: Sei uscito dalla griglia!")
-            return False
+    if(uscita == True):
+        print("Hai raggiunto l'uscita!")
+        return True
+    else:
+        print("GAMEOVER: Sei uscito dalla griglia!")
+        return False
 
 def main():
     print("=== Benvenuto in Room Escape ===")
